@@ -1,44 +1,107 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> My CSS Practice </title>
-        <link rel="stylesheet" href="style.css">
+        <title> HTML Intermediate </title>
+        <link rel="stylesheet" href="html_int.css">
     </head>
     <body>
-        <div class="container">
-            <h1> This is h1 </h1>
-            <h2> This is h2 </h2>
-            <h3> This is h3 </h3>
-            <h4> This is h4 </h4>
-            <p> 
-                This is a para with <strong style="text-transform: uppercase"> words </strong> like 
-                <strong> Strong, Jumbo, Eminent </strong>
-            </p>
-            <p style="text-align:justify"> This is a long long long long long long long long long long long long long long long long long long long long long long  sentence </p>
-            <p style="text-decoration:overline"> This line has overline </p>
-            <p style="text-decoration:underline"> This line has underline </p>
-            <p style="text-decoration:line-through"> This line has line-through </p>
-            <p style="font-weight:bold"> This text is bold </p>
-            <p style="line-height:2"> 
-                This is a para with multiple lines: </br>
-                This is line 1 </br>
-                This is line 2 </br>
-                This is line 3 </br>
-                This is line 4 </br>
-                This is line 5 </br>
-            </p>
-            <p style="line-height:1"> 
-                This is a para with multiple lines but with less line height: </br>
-                This is line 1 </br>
-                This is line 2 </br>
-                This is line 3 </br>
-                This is line 4 </br>
-                This is line 5 </br>
-            </p>
-                
+        <h1> This is html Intermediate tutorial </h1>
+        <ul>
+            <li>
+                <h3> First we explain use of div and span tags </h3>
+                <p>
+                <strong style="font-style: italic;"> span </strong>
+                is used to make style changes to small <em> chunks </em> of code.
+                Span is <em> inline </em>.
+                </p>
 
+                <p>
+                <strong style="font-style: italic;"> div </strong>
+                is used to make style changes to <em> blocks </em> of code.
+                </p>
 
-        </div>
+            </li>
+            <li>
+                <h3> E.g. </h3>
+                <p>
+                <div id="scissors">
+                    <p> This is <span class="paper"> crazy </span> </p>
+                </div>
+                </p>
+            </li>
+            <li>
+                We should avoid using divs and especially spans.
+                Use a sensible alternative like <em> em </em> instead.
+            </li>
+            <li>
+                <h3>
+                    Use of abbr tag
+                </h3>
+                <p> This web site is about 
+                <abbr title="HyperText Markup Language"> HTML </abbr>
+                and <abbr title="Cascading StyleSheets"> CSS </abbr>
+                </p>
+            </li>
+            <li>
+                <h3>
+                    Use of quotations tags blockquote and q
+                </h3>
+                <ul>
+                    <li>
+                        <h4>
+                            q is used for shorter in-line quotations. 
+                        </h4>
+                        <p>
+                            So I asked Bob about quotations on the Web and he said 
+                            <q>I know as much about quotations as I do about pigeon fancying</q>.
+                        </p>
+                    </li>
+                    <li>
+                        <h4>
+                            blockquote is used for (as name suggests) blocks. 
+                        </h4>
+                        <p> I found HTML Dog. It said: </p>
+                        <blockquote cite="http://www.htmldog.com/guides/html/intermediate/text/">
+                            <p> Blockquote and q are use for quotations. blockquote is generally used for standalon often multiline quotations whereas q is used for shorter, in-line quotations. </p>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <h4>
+                            Use-case in HTML5 elements.
+                        </h4>
+                        <figure>
+                            <img src="darwin.jpg">
+                            <figcaption>Charles Darwin</figcaption>
+                            <blockquote>[Big old quotation about evolution]</blockquote>
+                        </figure>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3> Use of cite tag </h3>
+                <p> According <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.</p>
+            </li>
+            <li>
+                <h3> Use of code and pre tag </h3>
+                <ul>
+                    <li>
+                    <h4> Use of code tag </h4>
+                    <p> If you add the line <code><var>givevaderachuckle</var> = true;</code>
+                        to the <code>destroy_planet</code> subroutine and then type <kbd>ilovejabba</kbd>
+                        into the console, the big bad green Death Star laser will etch <samp>Slug Lover!</samp>
+                        on the planet's surface.</p>
+                    </li>
+                    <li>
+                    <h4> Use of pre tag in code </h4>
+    <pre>
+
+    def sum(x, y): 
+        return x + y
+    </pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
     </body>
 </html>
